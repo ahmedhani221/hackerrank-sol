@@ -1,0 +1,10 @@
+# Problem: Sum and Prod
+
+import numpy as np
+
+N, M = map(int, input().split())
+
+arr = np.array([list(map(int, input().split())) for i in range(N)])
+
+sum = np.sum(arr, axis = 0)
+print(np.prod(sum))
